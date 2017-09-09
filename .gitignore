@@ -1,4 +1,5 @@
 *.o
+*.a
 
 # vim session
 .*.swp*
@@ -6,6 +7,7 @@
 # Test files
 callgrind*
 *.pcap
+*.pcapdump
 
 # Deps
 *.d
@@ -25,6 +27,11 @@ config.guess.dh*
 config.sub.dh*
 
 # built binaries
+capture_linux_bluetooth/kismet_cap_linux_bluetooth
+capture_linux_wifi/kismet_cap_linux_wifi
+kismet
+kismet_cap_hackrf_sweep
+kismet_cap_pcapfile
 kismet_capture
 kismet_client
 kismet_drone
@@ -36,3 +43,10 @@ plugin-*/*.so
 # Packaging
 !packaging/centos/el7/Makefile
 packaging/centos/el7/kismet-git.spec
+packaging/kismet.pc
+
+msgpack-1.4.1/libtool
+msgpack-1.4.1/msgpack.pc
+msgpack-1.4.1/src/.deps/
+msgpack-1.4.1/stamp-h1
+msgpack-1.4.1/test/.deps/
